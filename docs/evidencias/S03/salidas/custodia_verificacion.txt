@@ -1,0 +1,21 @@
+Sellados 19 archivos en 20_evidencia/SHA256SUMS_E03.txt
+
+  20_evidencia/E03_scan/nmap_servicios.txt: OK
+  20_evidencia/E03_scan/nuclei_raw.jsonl: OK
+  20_evidencia/E03_scan/nuclei_targets.txt: OK
+  20_evidencia/E03_scan/objetivos.txt: OK
+  20_evidencia/E03_scan/postgres_autenticado.txt: OK
+  20_evidencia/E03_scan/reporte_greenbone.csv: OK
+  20_evidencia/E03_scan/reporte_greenbone.xml: OK
+  20_evidencia/E03_scan/verificacion_web.txt: OK
+  40_hallazgos/PT03_registro_riesgos.csv: OK
+  30_papeles_trabajo/PT03_tecnico_a_riesgo.py: OK
+  30_papeles_trabajo/PT03_soa_extracto.md: OK
+  docs/evidencias/S03/01_greenbone_feed_status.png: OK
+  docs/evidencias/S03/02_simplerisk_escalas_y_criterio.png: OK
+  docs/evidencias/S03/03_simplerisk_formula_classic.png: OK
+  docs/evidencias/S03/04_simplerisk_duenos_de_riesgo.png: OK
+  docs/evidencias/S03/05_simplerisk_riesgos_cargados.png: OK
+  docs/evidencias/S03/06_greenbone_tarea_escaneo.png: OK
+  docs/evidencias/S03/07_greenbone_reportes.png: OK
+  docs/evidencias/S03/08_simplerisk_mitigacion_control_iso.png: OK

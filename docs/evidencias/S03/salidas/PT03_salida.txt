@@ -1,5 +1,5 @@
 Registro de riesgos generado: C:\Users\Hyperion\Downloads\Auditoria-main\Auditoria-main\si084-lab\40_hallazgos\PT03_registro_riesgos.csv
-Riesgos registrados: 10
+Riesgos registrados: 48
 
 ID     ACTIVO               DUENO                    CVSS  P  I  VAL  NIVEL    VULNERABILIDAD
 ---------------------------------------------------------------------------------------------
@@ -10,18 +10,33 @@ R-004  Base de datos ERP    Gerencia de Finanzas     7.5   3  5  15   Alto     P
 R-005  Base de datos ERP    Gerencia de Finanzas     7.5   3  5  15   Alto     Postgresql Default Database - Enumeration
 R-006  Base de datos ERP    Gerencia de Finanzas     7.2   3  5  15   Alto     La cuenta de servicio de la aplicación es superusuar
 R-007  Portal de clientes   Gerencia Comercial       5.3   3  4  12   Alto     Prometheus Metrics - Detect
-R-008  Base de datos ERP    Gerencia de Finanzas     5.0   2  5  10   Medio    pg_hba.conf acepta md5 desde cualquier host de la re
-R-009  Base de datos ERP    Gerencia de Finanzas     4.3   2  5  10   Medio    Contraseñas almacenadas con md5 en lugar de scram-sh
-R-010  App legada interna   Gerencia de Operaciones  5.3   2  3  6    Medio    Sensitive Configuration Files Listing - Detect
-
-Distribución por nivel (tras el ajuste de auditoría):
-  Crítico  3
-  Alto     4
-  Medio    3
-
-Evidencia por fuente:
-  Prueba autenticada   5
-  nuclei               5
-
-Ajustes de auditoría aplicados:
-  R-003: 10 (Medio) -> 20 (Crítico)
+R-008  Portal de clientes   Gerencia Comercial       5.0   3  4  12   Alto     TCP Sequence Number Approximation Reset DoS Vulnerab
+R-009  Base de datos ERP    Gerencia de Finanzas     5.0   2  5  10   Medio    pg_hba.conf acepta md5 desde cualquier host de la re
+R-010  Base de datos ERP    Gerencia de Finanzas     4.3   2  5  10   Medio    Contraseñas almacenadas con md5 en lugar de scram-sh
+R-011  App legada interna   Gerencia de Operaciones  8.2   3  3  9    Medio    Apache HTTP Server 2.4.7 - 2.4.51 Multiple Vulnerabi
+R-012  App legada interna   Gerencia de Operaciones  7.8   3  3  9    Medio    Apache HTTP Server < 2.4.39 Privilege Escalation Vul
+R-013  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server HTTP/2 connection DoS Vulnerabili
+R-014  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server mod_http2 null pointer dereferenc
+R-015  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server 2.4.17 < 2.4.49 mod_proxy HTTP/2 
+R-016  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server 2.4.20 - 2.4.39 Multiple Vulnerab
+R-017  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server 2.4.20 < 2.4.44 Multiple Vulnerab
+R-018  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server < 2.4.38 mod_session_cookie Vulne
+R-019  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server < 2.4.39 mod_auth_digest Access C
+R-020  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server < 2.4.58 mod_macro Out-of-bounds 
+R-021  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server < 2.4.59 Multiple Vulnerabilities
+R-022  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server Denial of Service Vulnerability-0
+R-023  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server Denial-Of-Service Vulnerability (
+R-024  App legada interna   Gerencia de Operaciones  7.5   3  3  9    Medio    Apache HTTP Server OPTIONS Memory Leak Vulnerability
+R-025  App legada interna   Gerencia de Operaciones  6.1   2  3  6    Medio    Apache HTTP Server 2.4.0 - 2.4.40 Multiple Vulnerabi
+R-026  App legada interna   Gerencia de Operaciones  6.1   2  3  6    Medio    Apache HTTP Server 2.4.0 < 2.4.42 Multiple Vulnerabi
+R-027  App legada interna   Gerencia de Operaciones  5.9   2  3  6    Medio    Apache HTTP Server 2.4.17 - 2.4.57 DoS Vulnerability
+R-028  App legada interna   Gerencia de Operaciones  5.9   2  3  6    Medio    Apache HTTP Server Denial of Service Vulnerability (
+R-029  App legada interna   Gerencia de Operaciones  5.9   2  3  6    Medio    Apache HTTP Server HTTP/2 SETTINGS Data Processing D
+R-030  App legada interna   Gerencia de Operaciones  5.8   2  3  6    Medio    Apache HTTP Server 2.4.7 - 2.4.65 Authentication Byp
+R-031  App legada interna   Gerencia de Operaciones  5.3   2  3  6    Medio    Apache HTTP Server 2.4.6 - 2.4.46 Tunneling Misconfi
+R-032  App legada interna   Gerencia de Operaciones  5.3   2  3  6    Medio    Apache HTTP Server < 2.4.38 HTTP/2 DoS Vulnerability
+R-033  App legada interna   Gerencia de Operaciones  5.3   2  3  6    Medio    Apache HTTP Server < 2.4.39 mod_http2 Use-After-Free
+R-034  App legada interna   Gerencia de Operaciones  5.3   2  3  6    Medio    Apache HTTP Server < 2.4.39 URL Normalization Vulner
+R-035  App legada interna   Gerencia de Operaciones  5.3   2  3  6    Medio    Sensitive Configuration Files Listing - Detect
+R-036  App legada interna   Gerencia de Operaciones  5.0   2  3  6    Medio    Apache HTTP Server 2.4.17 < 2.4.64 DoS Vulnerability
+R-037  App legada interna   Gerencia de Operaciones  5.0   2  3 

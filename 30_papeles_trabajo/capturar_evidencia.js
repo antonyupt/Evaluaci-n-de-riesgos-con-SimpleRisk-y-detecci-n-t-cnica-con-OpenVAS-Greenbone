@@ -67,9 +67,23 @@ async function type(page, sel, value) {
     await shot(page, '04_simplerisk_duenos_de_riesgo.png',
       'Dueños de riesgo por area (resultado 2)');
 
-    await page.goto(`${SR}/management/index.php`, { waitUntil: 'networkidle2' }).catch(() => {});
+    await page.goto(`${SR}/management/review_risks.php`, { waitUntil: 'networkidle2' }).catch(() => {});
+    await sleep(9000);
     await shot(page, '05_simplerisk_riesgos_cargados.png',
       'Riesgos cargados con su valor y nivel (resultado 6)');
+
+    // Detalle de R-003 (el riesgo con ajuste de auditoria) + su plan de mitigacion
+    await page.goto(`${SR}/management/view.php?id=2003&active=ReviewRisksRegularly`,
+      { waitUntil: 'networkidle2' }).catch(() => {});
+    await sleep(2500);
+    const mtabs = await page.$$('[role="tab"], .nav-link, a');
+    for (const t of mtabs) {
+      const txt = (await page.evaluate(e => e.textContent, t) || '').trim();
+      if (/^Mitigation$/i.test(txt)) { await t.click(); break; }
+    }
+    await sleep(2000);
+    await shot(page, '08_simplerisk_mitigacion_control_iso.png',
+      'Plan de mitigacion con control ISO 27001 mapeado (resultado 6)');
   } catch (e) {
     console.log('  [!] SimpleRisk:', e.message);
   }
