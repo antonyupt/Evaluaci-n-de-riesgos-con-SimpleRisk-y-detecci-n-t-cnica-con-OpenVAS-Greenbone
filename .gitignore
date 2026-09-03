@@ -1,0 +1,5 @@
+# Entorno local, no se versiona
+entorno/greenbone/docker-compose.yml.orig
+**/node_modules/
+*.tmp
+.tmp/

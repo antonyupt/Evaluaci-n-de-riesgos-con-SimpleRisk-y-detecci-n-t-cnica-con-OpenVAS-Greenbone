@@ -1,0 +1,16 @@
+# SI-084 · Semana 03 · ALCANCE AUTORIZADO DEL ESCANEO
+# Generado: 2026-09-03 01:04:32 UTC
+# Regla: se escanea EXCLUSIVAMENTE la red Docker audit_net.
+# Escanear fuera de este alcance es acceso no autorizado (Ley 30096, art. 2).
+
+## Subred autorizada de audit_net:
+172.20.0.0/16
+
+## Gateway:
+172.20.0.1
+
+## Contenedores dentro del alcance (nombre / IP):
+/si084_db 172.20.0.4
+/si084_juiceshop 172.20.0.3
+/si084_dvwa 172.20.0.2
+/si084_portal 172.20.0.5

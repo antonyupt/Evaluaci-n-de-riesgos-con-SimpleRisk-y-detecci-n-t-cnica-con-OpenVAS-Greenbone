@@ -1,0 +1,40 @@
+# SI-084 · E03 · Estado del entorno auditado y de las herramientas
+# Generado: 2026-09-03 01:29:33 UTC
+
+## Entorno auditado si084-lab (docker compose ps)
+NAME               IMAGE                          STATUS                    PORTS
+si084_db           postgres:13                    Up 25 minutes             5432/tcp
+si084_dvwa         vulnerables/web-dvwa           Up 25 minutes             127.0.0.1:8081->80/tcp
+si084_juiceshop    bkimminich/juice-shop          Up 25 minutes             127.0.0.1:3000->3000/tcp
+si084_portal       nginx:1.18-alpine              Up 25 minutes             127.0.0.1:8082->80/tcp
+si084_simplerisk   simplerisk/simplerisk:latest   Up 21 minutes (healthy)   127.0.0.1:8083->80/tcp, 127.0.0.1:8443->443/tcp
+si084_srdb         mariadb:11                     Up 24 minutes             3306/tcp
+
+## Pila de Greenbone Community Edition
+NAME                                                STATUS
+greenbone-community-edition-cert-bund-data-1        Up 19 minutes (healthy)
+greenbone-community-edition-data-objects-1          Up 19 minutes (healthy)
+greenbone-community-edition-dfn-cert-data-1         Up 19 minutes (healthy)
+greenbone-community-edition-gsa-1                   Up 19 minutes (healthy)
+greenbone-community-edition-gsad-1                  Up 18 minutes
+greenbone-community-edition-gvmd-1                  Up 18 minutes (healthy)
+greenbone-community-edition-nginx-1                 Up 16 minutes
+greenbone-community-edition-notus-data-1            Up 19 minutes (healthy)
+greenbone-community-edition-openvas-1               Up 19 minutes
+greenbone-community-edition-openvasd-1              Up 19 minutes
+greenbone-community-edition-ospd-openvas-1          Up 19 minutes
+greenbone-community-edition-pg-gvm-1                Up 19 minutes (healthy)
+greenbone-community-edition-redis-server-1          Up 19 minutes
+greenbone-community-edition-report-formats-1        Up 19 minutes (healthy)
+greenbone-community-edition-scap-data-1             Up 19 minutes (healthy)
+greenbone-community-edition-vulnerability-tests-1   Up 19 minutes (healthy)
+
+## Red audit_net
+Subred: 172.20.0.0/16  Gateway: 172.20.0.1
+si084_srdb 172.20.0.7/16
+si084_portal 172.20.0.5/16
+si084_simplerisk 172.20.0.8/16
+si084_dvwa 172.20.0.2/16
+si084_juiceshop 172.20.0.3/16
+si084_db 172.20.0.4/16
+

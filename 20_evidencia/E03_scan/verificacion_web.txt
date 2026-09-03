@@ -1,0 +1,81 @@
+# SI-084 · E03 · Verificacion manual de hallazgos web (corrobora el escaneo)
+# Generado: 2026-09-03 01:33:08 UTC
+# Ejecutado desde un contenedor dentro de audit_net. Alcance: audit_net.
+
+==============================================================
+## si084_portal (172.20.0.5) — Portal corporativo · Publica
+==============================================================
+### Cabeceras de respuesta (se busca CSP, HSTS, X-Frame-Options)
+Unable to find image 'curlimages/curl:latest' locally
+latest: Pulling from curlimages/curl
+b18ba029a163: Pulling fs layer
+b18ba029a163: Download complete
+b18ba029a163: Pull complete
+Digest: sha256:58adaa4e8dca9c988bae2aba4ab3434a0bb2da16bbe3f92dec39ec7785166777
+Status: Downloaded newer image for curlimages/curl:latest
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Thu, 03 Sep 2026 01:33:14 GMT
+Content-Type: text/html
+Content-Length: 263
+Last-Modified: Thu, 03 Sep 2026 01:03:07 GMT
+Connection: keep-alive
+ETag: "6a98c74b-107"
+Accept-Ranges: bytes
+
+### Listado de directorio habilitado en /docs/ (autoindex on)
+<html>
+<head><title>Index of /docs/</title></head>
+<body>
+<h1>Index of /docs/</h1><hr><pre><a href="../">../</a>
+<a href="memoria_anual.txt">memoria_anual.txt</a>                                  03-Sep-2026 01:03                  34
+<a href="tarifario.txt">tarifario.txt</a>                                      03-Sep-2026 01:03                  38
+</pre><hr></body>
+</html>
+
+==============================================================
+## si084_dvwa (172.20.0.2) — App legada interna
+==============================================================
+### Cabeceras y cookies
+HTTP/1.1 302 Found
+Date: Thu, 03 Sep 2026 01:33:15 GMT
+Server: Apache/2.4.25 (Debian)
+Set-Cookie: PHPSESSID=pbln14miskfr0mibb4tfla21b5; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=pbln14miskfr0mibb4tfla21b5; path=/
+Set-Cookie: security=low
+Location: login.php
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+
+==============================================================
+## si084_juiceshop (172.20.0.3:3000) — Portal de clientes
+==============================================================
+### Cabeceras
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Feature-Policy: payment 'self'
+X-Recruiting: /#/jobs
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Thu, 03 Sep 2026 01:04:10 GMT
+ETag: W/"24b1-1a064cb75f5"
+Content-Type: text/html; charset=UTF-8
+Content-Length: 9393
+Vary: Accept-Encoding
+Date: Thu, 03 Sep 2026 01:33:16 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+### Metricas Prometheus expuestas sin autenticacion
+# HELP juiceshop_llm_input_tokens_total Number of total input tokens processed
+# TYPE juiceshop_llm_input_tokens_total counter
+juiceshop_llm_input_tokens_total{app="juiceshop"} 0
+
+# HELP juiceshop_llm_input_tokens Number of input tokens processed
+# TYPE juiceshop_llm_input_tokens counter

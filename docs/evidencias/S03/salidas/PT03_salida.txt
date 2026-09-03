@@ -1,0 +1,27 @@
+Registro de riesgos generado: C:\Users\Hyperion\Downloads\Auditoria-main\Auditoria-main\si084-lab\40_hallazgos\PT03_registro_riesgos.csv
+Riesgos registrados: 10
+
+ID     ACTIVO               DUENO                    CVSS  P  I  VAL  NIVEL    VULNERABILIDAD
+---------------------------------------------------------------------------------------------
+R-001  Base de datos ERP    Gerencia de Finanzas     9.8   4  5  20   Crítico  Postgresql Empty Password - Detect
+R-002  Base de datos ERP    Gerencia de Finanzas     9.8   4  5  20   Crítico  Credencial por defecto válida en PostgreSQL (postgre
+R-003  Base de datos ERP    Gerencia de Finanzas     5.9   4  5  20   Crítico  Transmisión en claro: TLS no forzado en PostgreSQL (
+R-004  Base de datos ERP    Gerencia de Finanzas     7.5   3  5  15   Alto     Postgres - Default Logins
+R-005  Base de datos ERP    Gerencia de Finanzas     7.5   3  5  15   Alto     Postgresql Default Database - Enumeration
+R-006  Base de datos ERP    Gerencia de Finanzas     7.2   3  5  15   Alto     La cuenta de servicio de la aplicación es superusuar
+R-007  Portal de clientes   Gerencia Comercial       5.3   3  4  12   Alto     Prometheus Metrics - Detect
+R-008  Base de datos ERP    Gerencia de Finanzas     5.0   2  5  10   Medio    pg_hba.conf acepta md5 desde cualquier host de la re
+R-009  Base de datos ERP    Gerencia de Finanzas     4.3   2  5  10   Medio    Contraseñas almacenadas con md5 en lugar de scram-sh
+R-010  App legada interna   Gerencia de Operaciones  5.3   2  3  6    Medio    Sensitive Configuration Files Listing - Detect
+
+Distribución por nivel (tras el ajuste de auditoría):
+  Crítico  3
+  Alto     4
+  Medio    3
+
+Evidencia por fuente:
+  Prueba autenticada   5
+  nuclei               5
+
+Ajustes de auditoría aplicados:
+  R-003: 10 (Medio) -> 20 (Crítico)

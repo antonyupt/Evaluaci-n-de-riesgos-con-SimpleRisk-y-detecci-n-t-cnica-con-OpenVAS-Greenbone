@@ -1,0 +1,50 @@
+# SI-084 · E03 · PRUEBA AUTENTICADA CONTRA si084_db (172.20.0.4:5432)
+# Credencial de laboratorio: postgres/postgres (por defecto de la imagen)
+# Fecha: 2026-09-03 01:06:28 UTC
+
+## PRUEBA 1 — ¿La credencial por defecto es válida?
+ AUTENTICACION EXITOSA CON CREDENCIAL POR DEFECTO
+
+
+## PRUEBA 2 — Version y parametros de seguridad
+                                                       version                                                        
+----------------------------------------------------------------------------------------------------------------------
+ PostgreSQL 13.23 (Debian 13.23-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+(1 row)
+
+ listen_addresses 
+------------------
+ *
+(1 row)
+
+
+## PRUEBA 3 — Algoritmo real de almacenamiento de contrasenas
+ usename  |  algoritmo  | usesuper 
+----------+-------------+----------
+ postgres | md5 (DEBIL) | t
+(1 row)
+
+
+## PRUEBA 4 — ¿El canal esta cifrado?
+    estado_canal    
+--------------------
+ EN CLARO - SIN TLS
+(1 row)
+
+
+## PRUEBA 5 — Parametros individuales (ssl / password_encryption)
+ssl                    = off
+password_encryption    = md5
+ssl_cert_file          = server.crt
+
+## PRUEBA 6 — Metodos de autenticacion configurados (pg_hba)
+cat: 'C:/Program Files/Git/var/lib/postgresql/data/pg_hba.conf': No such file or directory
+
+## PRUEBA 6 — Metodos de autenticacion configurados (pg_hba.conf)
+local   all             all                                     trust
+host    all             all             127.0.0.1/32            trust
+host    all             all             ::1/128                 trust
+local   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust
+host all all all md5
