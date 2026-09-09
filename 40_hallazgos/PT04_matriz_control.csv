@@ -1,0 +1,518 @@
+herramienta,severidad,hallazgo,control_iso27001,objetivo_cobit
+Lynis,Media,LYNIS|This release is more than 4 months old. Check the website or GitHub to see if there is an update available.|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,DEB-0280|Install libpam-tmpdir to set $TMP and $TMPDIR for PAM sessions|-|-|,A.8.9 Configuration management,BAI10.02
+Lynis,Media,DEB-0810|Install apt-listbugs to display a list of critical bugs prior to each APT installation.|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,DEB-0811|Install apt-listchanges to display any significant changes prior to any upgrade via APT.|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,"DEB-0831|Install needrestart, alternatively to debian-goodies, so that you can run needrestart after upgrades to determine which daemons are using old versions ",A.8.8 Management of technical vulnerabilities,DSS05.07
+Lynis,Media,DEB-0880|Install fail2ban to automatically ban hosts that commit multiple authentication errors.|-|-|,A.5.17 Authentication information,DSS05.04
+Lynis,Media,BOOT-5180|Determine runlevel and services at startup|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,KRNL-5788|Determine why /vmlinuz or /boot/vmlinuz is missing on this Debian/Ubuntu system.|/vmlinuz or /boot/vmlinuz|-|,Sin clasificar,Sin clasificar
+Lynis,Media,"KRNL-5820|If not required, consider explicit disabling of core dump in /etc/security/limits.conf file|-|-|",Sin clasificar,Sin clasificar
+Lynis,Media,AUTH-9230|Configure password hashing rounds in /etc/login.defs|-|-|,A.5.17 Authentication information,DSS05.04
+Lynis,Media,AUTH-9262|Install a PAM module for password strength testing like pam_cracklib or pam_passwdqc|-|-|,A.5.17 Authentication information,DSS05.04
+Lynis,Media,AUTH-9286|Configure minimum password age in /etc/login.defs|-|-|,A.5.17 Authentication information,DSS05.04
+Lynis,Media,AUTH-9286|Configure maximum password age in /etc/login.defs|-|-|,A.5.17 Authentication information,DSS05.04
+Lynis,Media,AUTH-9328|Default umask in /etc/login.defs could be more strict like 027|-|-|,A.5.17 Authentication information,DSS05.04
+Lynis,Media,"FILE-6310|To decrease the impact of a full /home file system, place /home on a separate partition|-|-|",Sin clasificar,Sin clasificar
+Lynis,Media,"FILE-6310|To decrease the impact of a full /tmp file system, place /tmp on a separate partition|-|-|",Sin clasificar,Sin clasificar
+Lynis,Media,"FILE-6310|To decrease the impact of a full /var file system, place /var on a separate partition|-|-|",Sin clasificar,Sin clasificar
+Lynis,Media,"USB-1000|Disable drivers like USB storage when not used, to prevent unauthorized storage or data theft|-|-|",A.5.17 Authentication information,DSS05.04
+Lynis,Media,"STRG-1846|Disable drivers like firewire storage when not used, to prevent unauthorized storage or data theft|-|-|",A.5.17 Authentication information,DSS05.04
+Lynis,Media,NAME-4028|Check DNS configuration for the dns domain name|-|-|,A.8.9 Configuration management,BAI10.02
+Lynis,Media,PKGS-7370|Install debsums utility for the verification of packages with known good database.|-|-|,Sin clasificar,Sin clasificar
+Lynis,Alta,PKGS-7392|Found one or more vulnerable packages.|-|-|,A.8.8 Management of technical vulnerabilities,DSS05.07
+Lynis,Media,"PKGS-7392|Update your system with apt-get update, apt-get upgrade, apt-get dist-upgrade and/or unattended-upgrades|-|-|",Sin clasificar,Sin clasificar
+Lynis,Media,PKGS-7394|Install package apt-show-versions for patch management purposes|-|-|,A.8.8 Management of technical vulnerabilities,DSS05.07
+Lynis,Media,PKGS-7420|Consider using a tool to automatically apply upgrades|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,NETW-3200|Determine if protocol 'dccp' is really needed on this system|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,NETW-3200|Determine if protocol 'sctp' is really needed on this system|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,NETW-3200|Determine if protocol 'rds' is really needed on this system|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,NETW-3200|Determine if protocol 'tipc' is really needed on this system|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,LOGG-2130|Check if any syslog daemon is running and correctly configured.|-|-|,A.8.15 Logging,DSS01.03
+Lynis,Alta,"LOGG-2138|klogd is not running, which could lead to missing kernel messages in log files|-|-|",A.8.15 Logging,DSS01.03
+Lynis,Media,"BANN-7126|Add a legal banner to /etc/issue, to warn unauthorized users|-|-|",A.5.17 Authentication information,DSS05.04
+Lynis,Media,"BANN-7130|Add legal banner to /etc/issue.net, to warn unauthorized users|-|-|",A.5.17 Authentication information,DSS05.04
+Lynis,Media,ACCT-9622|Enable process accounting|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,ACCT-9626|Enable sysstat to collect accounting (no results)|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,ACCT-9628|Enable auditd to collect audit information|-|-|,A.8.15 Logging,DSS01.03
+Lynis,Media,FINT-4350|Install a file integrity tool to monitor changes to critical and sensitive files|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,TOOL-5002|Determine if automation tools are present for system management|-|-|,Sin clasificar,Sin clasificar
+Lynis,Media,FILE-7524|Consider restricting file permissions|See screen output or log file|text:Use chmod to change file permissions|,A.8.15 Logging,DSS01.03
+Lynis,Media,KRNL-6000|One or more sysctl values differ from the scan profile and could be tweaked||Change sysctl value or disable test (skip-test=KRNL-6000:<sysctl-key>)|,Sin clasificar,Sin clasificar
+Lynis,Media,"HRDN-7230|Harden the system by installing at least one malware scanner, to perform periodic file system scans|-|Install a tool like rkhunter, chkrootkit, OSSEC|",A.8.2 Privileged access rights,DSS05.04
+OpenSCAP,Alta,xccdf_org.ssgproject.content_rule_package_pam_pwquality_installed,A.8.9 Configuration management,BAI10.02
+OpenSCAP,Alta,xccdf_org.ssgproject.content_rule_use_pam_wheel_group_for_su,A.8.9 Configuration management,BAI10.02
+OpenSCAP,Alta,xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc,A.8.9 Configuration management,BAI10.02
+OpenSCAP,Alta,xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile,A.8.9 Configuration management,BAI10.02
+OpenSCAP,Alta,xccdf_org.ssgproject.content_rule_permissions_local_var_log,A.8.15 Logging,DSS01.03
+Docker Bench,Alta,1.1.1 - Ensure a separate partition for containers has been created (Automated),Sin clasificar,Sin clasificar
+Docker Bench,Alta,1.1.3 - Ensure auditing is configured for the Docker daemon (Automated),A.8.15 Logging,DSS01.03
+Docker Bench,Alta,1.1.4 - Ensure auditing is configured for Docker files and directories -/run/containerd (Automated),A.8.15 Logging,DSS01.03
+Docker Bench,Alta,1.1.5 - Ensure auditing is configured for Docker files and directories - /var/lib/docker (Automated),A.8.15 Logging,DSS01.03
+Docker Bench,Alta,2.2 - Ensure network traffic is restricted between containers on the default bridge (Scored),A.8.20 Networks security,DSS05.02
+Docker Bench,Alta,2.9 - Enable user namespace support (Scored),A.8.20 Networks security,DSS05.02
+Docker Bench,Alta,2.12 - Ensure that authorization for Docker client commands is enabled (Scored),A.5.17 Authentication information,DSS05.04
+Docker Bench,Alta,2.13 - Ensure centralized and remote logging is configured (Scored),A.8.15 Logging,DSS01.03
+Docker Bench,Alta,2.14 - Ensure containers are restricted from acquiring new privileges (Scored),A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,2.15 - Ensure live restore is enabled (Scored),A.8.13 Information backup,DSS04.07
+Docker Bench,Alta,2.16 - Ensure Userland Proxy is Disabled (Scored),Sin clasificar,Sin clasificar
+Docker Bench,Alta,3.15 - Ensure that the Docker socket file ownership is set to root:docker (Automated),A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Wrong ownership for /var/run/docker.sock,Sin clasificar,Sin clasificar
+Docker Bench,Alta,4.1 - Ensure that a user for the container has been created (Automated),Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Running as root: greenbone-community-edition-nginx-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Running as root: greenbone-community-edition-gsad-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Running as root: greenbone-community-edition-gvmd-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Running as root: greenbone-community-edition-pg-gvm-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Running as root: greenbone-community-edition-ospd-openvas-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Running as root: greenbone-community-edition-openvasd-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,4.5 - Ensure Content trust for Docker is Enabled (Automated),Sin clasificar,Sin clasificar
+Docker Bench,Alta,4.6 - Ensure that HEALTHCHECK instructions have been added to container images (Automated),A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [ubuntu:22.04],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/openvas-scanner:stable],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/nginx:latest],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/gpg-data:latest],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/gsa:stable-slim],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/gsad:stable],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [wordpress:latest],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [postgres:16],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [mariadb:11],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/ospd-openvas:stable],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/gvm-tools:latest],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [bkimminich/juice-shop:latest],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [registry.community.greenbone.net/community/redis-server:latest],A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* No Healthcheck found: [vulnerables/web-dvwa:latest],A.8.8 Management of technical vulnerabilities,DSS05.07
+Docker Bench,Alta,"5.2 - Ensure that, if applicable, an AppArmor Profile is enabled (Automated)",Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No AppArmorProfile Found: greenbone-community-edition-nginx-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No AppArmorProfile Found: greenbone-community-edition-gsad-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No AppArmorProfile Found: greenbone-community-edition-gvmd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No AppArmorProfile Found: greenbone-community-edition-pg-gvm-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No AppArmorProfile Found: greenbone-community-edition-ospd-openvas-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No AppArmorProfile Found: greenbone-community-edition-openvasd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No AppArmorProfile Found: greenbone-community-edition-redis-server-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,"5.3 - Ensure that, if applicable, SELinux security options are set (Automated)",Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No SecurityOptions Found: greenbone-community-edition-nginx-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No SecurityOptions Found: greenbone-community-edition-gsad-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No SecurityOptions Found: greenbone-community-edition-gvmd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No SecurityOptions Found: greenbone-community-edition-pg-gvm-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No SecurityOptions Found: greenbone-community-edition-openvasd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* No SecurityOptions Found: greenbone-community-edition-redis-server-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,5.4 - Ensure that Linux kernel capabilities are restricted within containers (Automated),A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Capabilities added: CapAdd=[CAP_NET_ADMIN] to greenbone-community-edition-ospd-openvas-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,5.8 - Ensure privileged ports are not mapped within containers (Automated),A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileged Port in use: 443 in greenbone-community-edition-nginx-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,5.9 - Ensure that only needed ports are open on the container (Manual),A.8.20 Networks security,DSS05.02
+Docker Bench,Alta,* Port in use: 443 in greenbone-community-edition-nginx-1,A.8.20 Networks security,DSS05.02
+Docker Bench,Alta,* Port in use: 9392 in greenbone-community-edition-nginx-1,A.8.20 Networks security,DSS05.02
+Docker Bench,Alta,5.11 - Ensure that the memory usage for containers is limited (Automated),Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without memory restrictions: greenbone-community-edition-nginx-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without memory restrictions: greenbone-community-edition-gsad-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without memory restrictions: greenbone-community-edition-gvmd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without memory restrictions: greenbone-community-edition-pg-gvm-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without memory restrictions: greenbone-community-edition-ospd-openvas-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without memory restrictions: greenbone-community-edition-openvasd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without memory restrictions: greenbone-community-edition-redis-server-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,5.12 - Ensure that CPU priority is set appropriately on containers (Automated),Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without CPU restrictions: greenbone-community-edition-nginx-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without CPU restrictions: greenbone-community-edition-gsad-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without CPU restrictions: greenbone-community-edition-gvmd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without CPU restrictions: greenbone-community-edition-pg-gvm-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without CPU restrictions: greenbone-community-edition-ospd-openvas-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without CPU restrictions: greenbone-community-edition-openvasd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Container running without CPU restrictions: greenbone-community-edition-redis-server-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,5.13 - Ensure that the container's root filesystem is mounted as read only (Automated),A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Container running with root FS mounted R/W: greenbone-community-edition-nginx-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Container running with root FS mounted R/W: greenbone-community-edition-gsad-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Container running with root FS mounted R/W: greenbone-community-edition-gvmd-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Container running with root FS mounted R/W: greenbone-community-edition-pg-gvm-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Container running with root FS mounted R/W: greenbone-community-edition-ospd-openvas-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Container running with root FS mounted R/W: greenbone-community-edition-openvasd-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Container running with root FS mounted R/W: greenbone-community-edition-redis-server-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,5.22 - Ensure the default seccomp profile is not Disabled (Automated),A.8.9 Configuration management,BAI10.02
+Docker Bench,Alta,* Default seccomp profile disabled: greenbone-community-edition-ospd-openvas-1,A.8.9 Configuration management,BAI10.02
+Docker Bench,Alta,5.26 - Ensure that the container is restricted from acquiring additional privileges (Automated),A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileges not restricted: greenbone-community-edition-nginx-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileges not restricted: greenbone-community-edition-gsad-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileges not restricted: greenbone-community-edition-gvmd-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileges not restricted: greenbone-community-edition-pg-gvm-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileges not restricted: greenbone-community-edition-ospd-openvas-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileges not restricted: greenbone-community-edition-openvasd-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,* Privileges not restricted: greenbone-community-edition-redis-server-1,A.8.2 Privileged access rights,DSS05.04
+Docker Bench,Alta,5.27 - Ensure that container health is checked at runtime (Automated),Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Health check not set: greenbone-community-edition-nginx-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Health check not set: greenbone-community-edition-gsad-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Health check not set: greenbone-community-edition-ospd-openvas-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Health check not set: greenbone-community-edition-openvasd-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,* Health check not set: greenbone-community-edition-redis-server-1,Sin clasificar,Sin clasificar
+Docker Bench,Alta,5.29 - Ensure that the PIDs cgroup limit is used (Automated),A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* PIDs limit not set: greenbone-community-edition-nginx-1,A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* PIDs limit not set: greenbone-community-edition-gsad-1,A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* PIDs limit not set: greenbone-community-edition-gvmd-1,A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* PIDs limit not set: greenbone-community-edition-pg-gvm-1,A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* PIDs limit not set: greenbone-community-edition-ospd-openvas-1,A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* PIDs limit not set: greenbone-community-edition-openvasd-1,A.8.16 Monitoring activities,DSS01.03
+Docker Bench,Alta,* PIDs limit not set: greenbone-community-edition-redis-server-1,A.8.16 Monitoring activities,DSS01.03
+Trivy,Critical,CVE-2025-68121 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-61726 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-61729 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-25679 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-27145 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-32280 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-32281 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-32283 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-33811 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-33814 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-33818 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39820 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39821 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39822 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39836 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42499 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42504 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56853 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56858 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56859 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56860 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56862 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-24882 en dirmngr 2.4.7-21+deb13u1+b4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-24882 en gnupg 2.4.7-21+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-24882 en gnupg-l10n 2.4.7-21+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-24882 en gpg 2.4.7-21+deb13u1+b4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-24882 en gpg-agent 2.4.7-21+deb13u1+b4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-24882 en gpgconf 2.4.7-21+deb13u1+b4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-24882 en gpgsm 2.4.7-21+deb13u1+b4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-41992 en gzip 1.13-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-54369 en libacl1 2.3.2-2+b1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en libncursesw6 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-11822 en libsqlite3-0 3.46.1-7+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-11824 en libsqlite3-0 3.46.1-7+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-14456 en libssl3t64 3.5.6-1~deb13u2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-16742 en libsystemd0 257.13-1~deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en libtinfo6 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-16742 en libudev1 257.13-1~deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-6653 en libxml2 2.12.7+dfsg+really2.9.14-2.1+deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86140 en libxml2 2.12.7+dfsg+really2.9.14-2.1+deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en ncurses-base 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en ncurses-bin 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-14456 en openssl 3.5.6-1~deb13u2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-14456 en openssl-provider-legacy 3.5.6-1~deb13u2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2025-68121 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-61726 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-61729 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-25679 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-27145 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-32280 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-32281 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-32283 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-33811 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-33814 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-33818 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39820 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39821 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39822 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-39836 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42499 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42504 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56853 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56858 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56859 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56860 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56862 en stdlib v1.24.6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en bsdutils 1:2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-12064 en curl 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-8286 en curl 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-8458 en curl 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-8927 en curl 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-41992 en gzip 1.13-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-56372 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56374 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61857 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61861 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61863 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61866 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61870 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86420 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86421 en imagemagick-7-common 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-54369 en libacl1 2.3.2-2+b1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libblkid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-34980 en libcups2t64 2.4.10-3+deb13u2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-12064 en libcurl4t64 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-8286 en libcurl4t64 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-8458 en libcurl4t64 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-8927 en libcurl4t64 8.14.1-2+deb13u4,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-33164 en libde265-0 1.0.15-1+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76956 en libexpat1 2.8.3-1~deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76957 en libexpat1 2.8.3-1~deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-58016 en libglib2.0-0t64 2.84.4-3~deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-58010 en libglib2.0-0t64 2.84.4-3~deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-58011 en libglib2.0-0t64 2.84.4-3~deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-58012 en libglib2.0-0t64 2.84.4-3~deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-58013 en libglib2.0-0t64 2.84.4-3~deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-58014 en libglib2.0-0t64 2.84.4-3~deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-58015 en libglib2.0-0t64 2.84.4-3~deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en liblastlog2-2 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-56372 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56374 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61857 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61861 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61863 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61866 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61870 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86420 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86421 en libmagickcore-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-56372 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-56374 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61857 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61861 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61863 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61866 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-61870 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86420 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86421 en libmagickwand-7.q16-10 8:7.1.1.43+dfsg1-1+deb13u11,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libmount1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en libncursesw6 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en libperl5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-20884 en libraw23t64 0.21.4-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-24450 en libraw23t64 0.21.4-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-24660 en libraw23t64 0.21.4-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-20889 en libraw23t64 0.21.4-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-21413 en libraw23t64 0.21.4-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libsmartcols1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-11822 en libsqlite3-0 3.46.1-7+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-11824 en libsqlite3-0 3.46.1-7+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-58050 en libssh2-1t64 1.11.1-1+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-14456 en libssl3t64 3.5.6-1~deb13u2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-16742 en libsystemd0 257.13-1~deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-36849 en libtiff6 4.7.0-3+deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-52490 en libtiff6 4.7.0-3+deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en libtinfo6 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-16742 en libudev1 257.13-1~deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en libuuid1 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-6653 en libxml2 2.12.7+dfsg+really2.9.14-2.1+deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-86140 en libxml2 2.12.7+dfsg+really2.9.14-2.1+deb13u3,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-43185 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2013-7445 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2019-19449 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2019-19814 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2021-3847 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2021-3864 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2024-21803 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2024-58015 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-22104 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-38137 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-38187 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-38204 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-38206 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-38421 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-38636 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-39859 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-39862 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-39958 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-40025 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-68174 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-68735 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-23102 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-23208 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-23327 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-31493 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-31536 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-31568 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-43198 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-43263 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-46130 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-46181 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-46279 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-52991 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53000 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53010 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53089 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53091 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53109 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53118 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53277 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-53330 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-63879 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-64017 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-64283 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-68159 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-68166 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-68264 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-68409 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-68426 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-68470 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-68480 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-72042 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-72098 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-72463 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74268 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74269 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74446 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74476 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74480 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74488 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74502 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74503 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74509 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74516 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74518 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74520 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74556 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74569 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74580 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74581 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74582 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74583 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74586 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74588 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74597 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74611 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74615 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74616 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74630 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74631 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74662 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74669 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74743 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74744 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74746 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74752 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-74753 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-80522 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-80530 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-80586 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-80590 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-80714 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-80725 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-80726 en linux-libc-dev 6.12.101-1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en login 1:4.16.0-2+really2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en mount 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en ncurses-base 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2025-69720 en ncurses-bin 6.5+20250216-2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-14456 en openssl 3.5.6-1~deb13u2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-14456 en openssl-provider-legacy 3.5.6-1~deb13u2,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en perl 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en perl-base 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-13221 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-42496 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,Critical,CVE-2026-8376 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-42497 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-48962 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57432 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-57433 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-9538 en perl-modules-5.40 5.40.1-6,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-76642 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78408 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78409 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
+Trivy,High,CVE-2026-78410 en util-linux 2.41.5-0+deb13u1,A.8.8 Management of technical vulnerabilities,DSS05.07
