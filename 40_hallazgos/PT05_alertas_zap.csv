@@ -1,0 +1,15 @@
+riesgo,alerta,cwe,instancias,solucion
+Medium,Backup File Disclosure,530,31,"<p>Do not edit files in-situ on the web server, and ensure that un-necessary files (including hidden files) are removed "
+Medium,Bypassing 403,348,6,
+Medium,CORS Misconfiguration,942,5,"<p>If a web resource contains sensitive information, the origin should be properly specified in the Access-Control-Allow"
+Medium,Content Security Policy (CSP) Header Not Set,693,5,"<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy"
+Medium,Cross-Domain Misconfiguration,264,5,"<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instanc"
+Low,Cross-Origin-Embedder-Policy Header Missing or Invalid,693,5,"<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets t"
+Low,Cross-Origin-Opener-Policy Header Missing or Invalid,693,5,"<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the"
+Low,Deprecated Feature Policy Header Set,16,5,"<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy head"
+Low,Timestamp Disclosure - Unix,497,5,"<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploit"
+Informational,Modern Web Application,-1,5,<p>This is an informational alert and so no changes are required.</p>
+Informational,User Agent Fuzzer,0,5,
+Informational,Storable but Non-Cacheable Content,524,5,
+Low,Dangerous JS Functions,749,1,<p>See the references for security advice on the use of these functions.</p>
+Informational,Storable and Cacheable Content,524,1,"<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider th"

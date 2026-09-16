@@ -1,0 +1,49 @@
+# Nmap 7.98 scan initiated Wed Sep 16 21:33:51 2026 as: /usr/bin/nmap --script ssl-enum-ciphers -p 443,8443 -oN /data/nmap_tls.txt 172.18.0.0/16
+Nmap scan report for 172.18.0.1
+Host is up (0.000011s latency).
+
+PORT     STATE  SERVICE
+443/tcp  closed https
+8443/tcp closed https-alt
+MAC Address: 72:5C:AA:37:F5:C7 (Unknown)
+
+Nmap scan report for si084_dvwa.si084-lab_audit_net (172.18.0.2)
+Host is up (0.000022s latency).
+
+PORT     STATE  SERVICE
+443/tcp  closed https
+8443/tcp closed https-alt
+MAC Address: 4E:0E:FA:51:62:73 (Unknown)
+
+Nmap scan report for si084_juiceshop.si084-lab_audit_net (172.18.0.3)
+Host is up (0.000018s latency).
+
+PORT     STATE  SERVICE
+443/tcp  closed https
+8443/tcp closed https-alt
+MAC Address: 7E:B6:5F:F3:E0:50 (Unknown)
+
+Nmap scan report for si084_wpdb.si084-lab_audit_net (172.18.0.4)
+Host is up (0.000012s latency).
+
+PORT     STATE  SERVICE
+443/tcp  closed https
+8443/tcp closed https-alt
+MAC Address: 3A:33:DF:CC:BE:1B (Unknown)
+
+Nmap scan report for si084_db.si084-lab_audit_net (172.18.0.5)
+Host is up (0.000013s latency).
+
+PORT     STATE  SERVICE
+443/tcp  closed https
+8443/tcp closed https-alt
+MAC Address: BA:B2:07:BC:CE:AA (Unknown)
+
+Nmap scan report for si084_portal.si084-lab_audit_net (172.18.0.6)
+Host is up (0.000048s latency).
+
+PORT     STATE  SERVICE
+443/tcp  closed https
+8443/tcp closed https-alt
+MAC Address: 4E:FD:11:30:D3:85 (Unknown)
+
