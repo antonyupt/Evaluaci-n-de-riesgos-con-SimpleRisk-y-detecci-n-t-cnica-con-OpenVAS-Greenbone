@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Wed Sep 16 21:32:21 2026 as: /usr/bin/nmap -sV -sC -p- -&#45;open -oA /data/nmap_servicios 172.18.0.0/16 -->
+<nmaprun scanner="nmap" args="/usr/bin/nmap -sV -sC -p- -&#45;open -oA /data/nmap_servicios 172.18.0.0/16" start="1789594341" startstr="Wed Sep 16 21:32:21 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.1" addrtype="ipv4"/>
+<address addr="72:5C:AA:37:F5:C7" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.2" addrtype="ipv4"/>
+<address addr="4E:0E:FA:51:62:73" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.3" addrtype="ipv4"/>
+<address addr="7E:B6:5F:F3:E0:50" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.4" addrtype="ipv4"/>
+<address addr="3A:33:DF:CC:BE:1B" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.5" addrtype="ipv4"/>
+<address addr="BA:B2:07:BC:CE:AA" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.6" addrtype="ipv4"/>
+<address addr="4E:FD:11:30:D3:85" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1789594351" endtime="1789594365"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.1" addrtype="ipv4"/>
+<address addr="72:5C:AA:37:F5:C7" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="reset" count="65533" proto="tcp" ports="1-110,112-59380,59382-65535"/>
+</extraports>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  3,4          111/tcp6  rpcbind&#xa;  100000  3,4          111/udp6  rpcbind&#xa;  100024  1          38035/tcp6  status&#xa;  100024  1          53737/udp   status&#xa;  100024  1          59314/udp6  status&#xa;  100024  1          59381/tcp   status&#xa;"><table key="100024">
+<table key="tcp6">
+<elem key="port">38035</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">::</elem>
+</table>
+<table key="udp">
+<elem key="port">53737</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+</table>
+<table key="udp6">
+<elem key="port">59314</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">::</elem>
+</table>
+<table key="tcp">
+<elem key="port">59381</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+</table>
+</table>
+<table key="100000">
+<table key="udp6">
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+</table>
+<table key="tcp">
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+</table>
+<table key="udp">
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+</table>
+<table key="local">
+<elem key="addr">/run/rpcbind.sock</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+</table>
+<table key="tcp6">
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="59381"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<times srtt="2" rttvar="0" to="100000"/>
+</host>
+<host starttime="1789594351" endtime="1789594365"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.2" addrtype="ipv4"/>
+<address addr="4E:0E:FA:51:62:73" addrtype="mac"/>
+<hostnames>
+<hostname name="si084_dvwa.si084-lab_audit_net" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="reset" count="65534" proto="tcp" ports="1-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script></port>
+</ports>
+<times srtt="3" rttvar="0" to="100000"/>
+</host>
+<host starttime="1789594351" endtime="1789594365"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.3" addrtype="ipv4"/>
+<address addr="7E:B6:5F:F3:E0:50" addrtype="mac"/>
+<hostnames>
+<hostname name="si084_juiceshop.si084-lab_audit_net" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="reset" count="65534" proto="tcp" ports="1-2999,3001-65535"/>
+</extraports>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ppp" servicefp="SF-Port3000-TCP:V=7.98%I=7%D=9/16%Time=6AAB0AFB%P=x86_64-unknown-linux-gnu%r(GetRequest,2668,&quot;HTTP/1\.1\x20200\x20OK\r\nAccess-Control-Allow-Origin:\x20\*\r\nX-Content-Type-Options:\x20nosniff\r\nX-Frame-Options:\x20SAMEORIGIN\r\nFeature-Policy:\x20payment\x20&apos;self&apos;\r\nX-Recruiting:\x20/#/jobs\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20public,\x20max-age=0\r\nLast-Modified:\x20Wed,\x2016\x20Sep\x202026\x2020:45:17\x20GMT\r\nETag:\x20W/\&quot;24b1-1a0abf77a64\&quot;\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nContent-Length:\x209393\r\nVary:\x20Accept-Encoding\r\nDate:\x20Wed,\x2016\x20Sep\x202026\x2021:32:43\x20GMT\r\nConnection:\x20close\r\n\r\n&lt;!-&#45;\n\x20\x20~\x20Copyright\x20\(c\)\x202014-2026\x20Bjoern\x20Kimminich\x20&amp;\x20the\x20OWASP\x20Juice\x20Shop\x20contributors\.\n\x20\x20~\x20SPDX-License-Identifier:\x20MIT\n\x20\x20-&#45;&gt;\n\n&lt;!doctype\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;\x20data-beasties-container&gt;\n&lt;head&gt;\n\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20&lt;title&gt;OWASP\x20Juice\x20Shop&lt;/title&gt;\n\x20\x20&lt;meta\x20name=\&quot;description\&quot;\x20content=\&quot;Probably\x20the\x20most\x20modern\x20and\x20sophisticated\x20insecure\x20web\x20application\&quot;&gt;\n\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\x20\x20&lt;link\x20rel=\&quot;preconnect\&quot;\x20href=\&quot;htt&quot;)%r(Help,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(NCP,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(HTTPOptions,EA,&quot;HTTP/1\.1\x20204\x20No\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nVary:\x20Access-Control-Request-Headers\r\nContent-Length:\x200\r\nDate:\x20Wed,\x2016\x20Sep\x202026\x2021:32:43\x20GMT\r\nConnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,EA,&quot;HTTP/1\.1\x20204\x20No\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nVary:\x20Access-Control-Request-Headers\r\nContent-Length:\x200\r\nDate:\x20Wed,\x2016\x20Sep\x202026\x2021:32:43\x20GMT\r\nConnection:\x20close\r\n\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.1 200 OK&#xa;    Access-Control-Allow-Origin: *&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Feature-Policy: payment &apos;self&apos;&#xa;    X-Recruiting: /#/jobs&#xa;    Accept-Ranges: bytes&#xa;    Cache-Control: public, max-age=0&#xa;    Last-Modified: Wed, 16 Sep 2026 20:45:17 GMT&#xa;    ETag: W/&quot;24b1-1a0abf77a64&quot;&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Content-Length: 9393&#xa;    Vary: Accept-Encoding&#xa;    Date: Wed, 16 Sep 2026 21:32:43 GMT&#xa;    Connection: close&#xa;    &lt;!-&#45;&#xa;    Copyright (c) 2014-2026 Bjoern Kimminich &amp; the OWASP Juice Shop contributors.&#xa;    SPDX-License-Identifier: MIT&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=&quot;en&quot; data-beasties-container&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;OWASP Juice Shop&lt;/title&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;Probably the most modern and sophisticated insecure web application&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;preconnect&quot; href=&quot;htt&#xa;  HTTPOptions, RTSPRequest: &#xa;    HTTP/1.1 204 No Content&#xa;    Access-Control-Allow-Origin: *&#xa;    Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE&#xa;    Vary: Access-Control-Request-Headers&#xa;    Content-Length: 0&#xa;    Date: Wed, 16 Sep 2026 21:32:43 GMT&#xa;    Connection: close&#xa;  Help, NCP: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close"><elem key="GetRequest">&#xa;    HTTP/1.1 200 OK&#xa;    Access-Control-Allow-Origin: *&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Feature-Policy: payment &apos;self&apos;&#xa;    X-Recruiting: /#/jobs&#xa;    Accept-Ranges: bytes&#xa;    Cache-Control: public, max-age=0&#xa;    Last-Modified: Wed, 16 Sep 2026 20:45:17 GMT&#xa;    ETag: W/&quot;24b1-1a0abf77a64&quot;&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Content-Length: 9393&#xa;    Vary: Accept-Encoding&#xa;    Date: Wed, 16 Sep 2026 21:32:43 GMT&#xa;    Connection: close&#xa;    &lt;!-&#45;&#xa;    Copyright (c) 2014-2026 Bjoern Kimminich &amp; the OWASP Juice Shop contributors.&#xa;    SPDX-License-Identifier: MIT&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=&quot;en&quot; data-beasties-container&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;OWASP Juice Shop&lt;/title&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;Probably the most modern and sophisticated insecure web application&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;preconnect&quot; href=&quot;htt</elem>
+<elem key="HTTPOptions, RTSPRequest">&#xa;    HTTP/1.1 204 No Content&#xa;    Access-Control-Allow-Origin: *&#xa;    Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE&#xa;    Vary: Access-Control-Request-Headers&#xa;    Content-Length: 0&#xa;    Date: Wed, 16 Sep 2026 21:32:43 GMT&#xa;    Connection: close</elem>
+<elem key="Help, NCP">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close</elem>
+</script></port>
+</ports>
+<times srtt="4" rttvar="0" to="100000"/>
+</host>
+<host starttime="1789594351" endtime="1789594365"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.4" addrtype="ipv4"/>
+<address addr="3A:33:DF:CC:BE:1B" addrtype="mac"/>
+<hostnames>
+<hostname name="si084_wpdb.si084-lab_audit_net" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="reset" count="65534" proto="tcp" ports="1-3305,3307-65535"/>
+</extraports>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" product="MariaDB" version="11.8.9" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb:11.8.9</cpe></service><script id="ssl-cert" output="Subject: commonName=MariaDB Server&#xa;Not valid before: 2026-09-16T20:45:17&#xa;Not valid after:  2036-09-13T20:45:17"><table key="subject">
+<elem key="commonName">MariaDB Server</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">MariaDB Server</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">BD6B28BC11931AE683CF13B5615C17F81F7DC2D27B3B3DDF820FCBF4A6A4C9F9997CC28424BA43CAA83C9F31AE24A5EEBB52251001A711D94F2DCE157FE4BBB270A431AE4727C51F2A7272A8C61D320FB080D033EEDDC30D5B89A72C64750000842FEF6BD8AF08F1E438AB5C83393DC0C12A7CC45156E1B570AA673B5BA31E0B5A3DE90535C4A4643159C873DBDCEDBD738C6D218B689E34E3C1A5EFB9B1316AE269FB80A3EBA5F131DBF076CABD0066C2BD817AB5C8E9441EC305AC501E266B13F869D93A466CAC2FDAAF43958836294EBF0EDD81D7185F505F766D1AD7B674EFB16F01C6CF77F88FBC7D82DA9DFE86FB8D3DBCAE196F517E9A2B00A6146BF4E341CACFA102E5AE67DC1453549C194A08DEB945AFD4DFE22AB2C416725CD3A7305A8AF7F8BB728B8A2166EB432750760A1988656463FF0D415D60D7994B745C344072626969CA8E3D1D39A2932CC7635EB589B2B2CB45926C7433F9B354F7A81446C51229BDE017AD1623222B2640FFA453B60F50FBA0F33234C5D3A891E95CE3B24973CAA2E0B55D6E48643603B05DE4B46589CF55D99B141EE4820A4898E33187981D589124722313F3A6891B4E73770FBB9110AE4ADEE0C515856516561346944DA3005FC4853D4BCD80F9990E43B662B93F2D4212F87CFB40ECE08EAD6BEC652322D625C09D44420ABA48691EC7B5734C7EE65C73562766E78CA9D577DF</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-09-16T20:45:17</elem>
+<elem key="notAfter">2036-09-13T20:45:17</elem>
+</table>
+<elem key="md5">b93672baf3f553063f294522b04e3963</elem>
+<elem key="sha1">901386719d6f0add12c67ba4e9658d9e137cfadd</elem>
+<elem key="sha256">d7e4a7a0ea2e7a7e1eae9687716b06e3c8bdc51cbad1540c90032b968efd894d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEqzCCApOgAwIBAgIBADANBgkqhkiG9w0BAQsFADAZMRcwFQYDVQQDDA5NYXJp&#xa;YURCIFNlcnZlcjAeFw0yNjA5MTYyMDQ1MTdaFw0zNjA5MTMyMDQ1MTdaMBkxFzAV&#xa;BgNVBAMMDk1hcmlhREIgU2VydmVyMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC&#xa;CgKCAgEAvWsovBGTGuaDzxO1YVwX+B99wtJ7Oz3fgg/L9KakyfmZfMKEJLpDyqg8&#xa;nzGuJKXuu1IlEAGnEdlPLc4Vf+S7snCkMa5HJ8UfKnJyqMYdMg+wgNAz7t3DDVuJ&#xa;pyxkdQAAhC/va9ivCPHkOKtcgzk9wMEqfMRRVuG1cKpnO1ujHgtaPekFNcSkZDFZ&#xa;yHPb3O29c4xtIYtonjTjwaXvubExauJp+4Cj66XxMdvwdsq9AGbCvYF6tcjpRB7D&#xa;BaxQHiZrE/hp2TpGbKwv2q9DlYg2KU6/Dt2B1xhfUF92bRrXtnTvsW8Bxs93+I+8&#xa;fYLanf6G+409vK4Zb1F+misAphRr9ONBys+hAuWuZ9wUU1ScGUoI3rlFr9Tf4iqy&#xa;xBZyXNOnMFqK9/i7couKIWbrQydQdgoZiGVkY/8NQV1g15lLdFw0QHJiaWnKjj0d&#xa;OaKTLMdjXrWJsrLLRZJsdDP5s1T3qBRGxRIpveAXrRYjIismQP+kU7YPUPug8zI0&#xa;xdOokelc47JJc8qi4LVdbkhkNgOwXeS0ZYnPVdmbFB7kggpImOMxh5gdWJEkciMT&#xa;86aJG05zdw+7kRCuSt7gxRWFZRZWE0aUTaMAX8SFPUvNgPmZDkO2Yrk/LUIS+Hz7&#xa;QOzgjq1r7GUjItYlwJ1EQgq6SGkex7VzTH7mXHNWJ2bnjKnVd98CAwEAATANBgkq&#xa;hkiG9w0BAQsFAAOCAgEAX9ip1DrIraa1mTFljilmW7ajQHdFpARVThnbriFAinx4&#xa;6o/o+1Hg/hn47SQBIwwa5JG4vkk4KFyysuP4pR3Iu5G21VY1zbfPLKJOByPCm4uu&#xa;/BrBVPie3sXi48V7iFdFS9uXMLDTTZsnm44LlHZOjZLcgJ9z0FtDKzqLcoLR7tfE&#xa;iDesWRsuL8D+IgVl/0fBboMUt0b4Le+E8rSXbCnvVy+h4FG9m4AkePuvpTG+ZJjb&#xa;fFU5vJKIA3tosA66T1b5aUZJUamX/SwutpDekErWdle3E9aUMwmlB6OXEiH/qc2r&#xa;1YXtm75ThZW8zfmTawbnZHX9uv6kNfldzddXgraz5Im0WAXTzQ1Z3pLNKhQHmrNZ&#xa;4zzZhyh4ifDx9Yfej7SXNTqTw2kIq3k1VrTKDDN2NernsfVIgIJ3FXR5AvT+F5du&#xa;jx/xMdJyqkeXDTqlCYA/ja/9gR++S5+xFmYGU5gpNuTkjFWBVJebpYNhKL9JdExz&#xa;HlB7JbWGrSitO+QnSWl6izykfEPhZ1oCSmUyjA23IeDn6LzTNUleswhozjzaqtGW&#xa;ZUFKR0B/mNPamrnBwP/Kd9EfipFDNVNOI+Ytkw+PLzP2SiKYF27G89O0y/hJfjRg&#xa;FQyjQW0I/UiFOsLJUujWfz0QGTiJkd0YBX/gI2tJDRWLp1B8cLMvdpcE78vTAvM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 11.8.9-MariaDB-ubu2404&#xa;  Thread ID: 40&#xa;  Capabilities flags: 65534&#xa;  Some Capabilities: Support41Auth, ODBCClient, LongColumnFlag, SwitchToSSLAfterHandshake, Speaks41ProtocolOld, ConnectWithDatabase, SupportsTransactions, DontAllowDatabaseTableColumn, IgnoreSigpipes, SupportsLoadDataLocal, SupportsCompression, IgnoreSpaceBeforeParenthesis, InteractiveClient, FoundRows, Speaks41ProtocolNew, SupportsAuthPlugins, SupportsMultipleStatments, SupportsMultipleResults&#xa;  Status: Autocommit&#xa;  Salt: THM)%{aS\SmJjWS{3(ov&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">11.8.9-MariaDB-ubu2404</elem>
+<elem key="Thread ID">40</elem>
+<elem key="Capabilities flags">65534</elem>
+<table key="Some Capabilities">
+<elem>Support41Auth</elem>
+<elem>ODBCClient</elem>
+<elem>LongColumnFlag</elem>
+<elem>SwitchToSSLAfterHandshake</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>SupportsTransactions</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>SupportsCompression</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>InteractiveClient</elem>
+<elem>FoundRows</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleStatments</elem>
+<elem>SupportsMultipleResults</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">THM)%{aS\SmJjWS{3(ov</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="3" rttvar="0" to="100000"/>
+</host>
+<host starttime="1789594366" endtime="1789594373"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.5" addrtype="ipv4"/>
+<address addr="BA:B2:07:BC:CE:AA" addrtype="mac"/>
+<hostnames>
+<hostname name="si084_db.si084-lab_audit_net" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="reset" count="65534" proto="tcp" ports="1-5431,5433-65535"/>
+</extraports>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="postgresql" product="PostgreSQL DB" version="9.6.0 or later" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql</cpe></service></port>
+</ports>
+<times srtt="3" rttvar="0" to="100000"/>
+</host>
+<host starttime="1789594366" endtime="1789594373"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.18.0.6" addrtype="ipv4"/>
+<address addr="4E:FD:11:30:D3:85" addrtype="mac"/>
+<hostnames>
+<hostname name="si084_portal.si084-lab_audit_net" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="reset" count="65534" proto="tcp" ports="1-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.68" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.68</cpe></service><script id="http-server-header" output="Apache/2.4.68 (Debian)"><elem>Apache/2.4.68 (Debian)</elem>
+</script><script id="http-title" output="Did not follow redirect to http://si084_portal.si084-lab_audit_net:8082/"><elem key="redirect_url">http://si084_portal.si084-lab_audit_net:8082/</elem>
+</script></port>
+</ports>
+<times srtt="4" rttvar="2" to="100000"/>
+</host>

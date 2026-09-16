@@ -1,0 +1,13 @@
+# Nmap 7.98 scan initiated Wed Sep 16 21:32:21 2026 as: /usr/bin/nmap -sV -sC -p- --open -oA /data/nmap_servicios 172.18.0.0/16
+Host: 172.18.0.1 ()	Status: Up
+Host: 172.18.0.1 ()	Ports: 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 59381/open/tcp//status//1 (RPC #100024)/	Ignored State: closed (65533)
+Host: 172.18.0.2 (si084_dvwa.si084-lab_audit_net)	Status: Up
+Host: 172.18.0.2 (si084_dvwa.si084-lab_audit_net)	Ports: 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/	Ignored State: closed (65534)
+Host: 172.18.0.3 (si084_juiceshop.si084-lab_audit_net)	Status: Up
+Host: 172.18.0.3 (si084_juiceshop.si084-lab_audit_net)	Ports: 3000/open/tcp//ppp?///	Ignored State: closed (65534)
+Host: 172.18.0.4 (si084_wpdb.si084-lab_audit_net)	Status: Up
+Host: 172.18.0.4 (si084_wpdb.si084-lab_audit_net)	Ports: 3306/open/tcp//mysql//MariaDB 11.8.9/	Ignored State: closed (65534)
+Host: 172.18.0.5 (si084_db.si084-lab_audit_net)	Status: Up
+Host: 172.18.0.5 (si084_db.si084-lab_audit_net)	Ports: 5432/open/tcp//postgresql//PostgreSQL DB 9.6.0 or later/	Ignored State: closed (65534)
+Host: 172.18.0.6 (si084_portal.si084-lab_audit_net)	Status: Up
+Host: 172.18.0.6 (si084_portal.si084-lab_audit_net)	Ports: 80/open/tcp//http//Apache httpd 2.4.68 ((Debian))/	Ignored State: closed (65534)

@@ -1,0 +1,21 @@
+# Nmap 7.98 scan initiated Wed Sep 16 21:32:02 2026 as: /usr/bin/nmap -sn -oN /data/nmap_hosts.txt 172.18.0.0/16
+Nmap scan report for 172.18.0.1
+Host is up (0.000015s latency).
+MAC Address: 72:5C:AA:37:F5:C7 (Unknown)
+Nmap scan report for si084_dvwa.si084-lab_audit_net (172.18.0.2)
+Host is up (0.000014s latency).
+MAC Address: 4E:0E:FA:51:62:73 (Unknown)
+Nmap scan report for si084_juiceshop.si084-lab_audit_net (172.18.0.3)
+Host is up (0.000011s latency).
+MAC Address: 7E:B6:5F:F3:E0:50 (Unknown)
+Nmap scan report for si084_wpdb.si084-lab_audit_net (172.18.0.4)
+Host is up (0.0000060s latency).
+MAC Address: 3A:33:DF:CC:BE:1B (Unknown)
+Nmap scan report for si084_db.si084-lab_audit_net (172.18.0.5)
+Host is up (0.000058s latency).
+MAC Address: BA:B2:07:BC:CE:AA (Unknown)
+Nmap scan report for si084_portal.si084-lab_audit_net (172.18.0.6)
+Host is up (0.000035s latency).
+MAC Address: 4E:FD:11:30:D3:85 (Unknown)
+Nmap scan report for fe43d35853df (172.18.0.7)
+Host is up.
